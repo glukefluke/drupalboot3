@@ -1,0 +1,58 @@
+/*
+Error: File to import not found or unreadable: ../bootstrap/assets/stylesheets/bootstrap.
+        on line 5 of style.scss
+
+1: // Default variables.
+2: @import "default-variables";
+3: 
+4: // Bootstrap Framework.
+5: @import '../bootstrap/assets/stylesheets/bootstrap';
+6: 
+7: // Base-theme overrides.
+8: @import 'overrides';
+
+Backtrace:
+style.scss:5
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:45:in `import'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:363:in `watch_or_update'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/exec/base.rb:52:in `parse'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/lib/sass/exec/base.rb:19:in `parse!'
+/Users/christopheclaire/.gem/ruby/2.0.0/gems/sass-3.4.21/bin/scss:13:in `<top (required)>'
+/usr/local/bin/scss:22:in `load'
+/usr/local/bin/scss:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../bootstrap/assets/stylesheets/bootstrap.\A         on line 5 of style.scss\A \A 1: // Default variables.\A 2: @import \"default-variables\";\A 3: \A 4: // Bootstrap Framework.\A 5: @import '../bootstrap/assets/stylesheets/bootstrap';\A 6: \A 7: // Base-theme overrides.\A 8: @import 'overrides';"; }

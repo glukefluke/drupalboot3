@@ -1,0 +1,77 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install', 'gulp' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.2
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData gulp
+8 silly fetchNamedPackageData gulp
+9 silly mapToRegistry name gulp
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry http://85.10.209.91/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'gulp',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'gulp',
+12 silly mapToRegistry   name: 'gulp',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri http://85.10.209.91/gulp
+14 verbose request uri http://85.10.209.91/gulp
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 8:49:56 PM
+17 verbose request id bc961bbdc55d5457
+18 http request GET http://85.10.209.91/gulp
+19 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 85.10.209.91:80
+20 info attempt registry request try #2 at 8:50:07 PM
+21 http request GET http://85.10.209.91/gulp
+22 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 85.10.209.91:80
+23 info attempt registry request try #3 at 8:51:07 PM
+24 http request GET http://85.10.209.91/gulp
+25 silly fetchPackageMetaData Error: connect ECONNREFUSED 85.10.209.91:80
+25 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1020:11)
+25 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1043:20)
+25 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+25 silly fetchPackageMetaData  error for gulp { Error: connect ECONNREFUSED 85.10.209.91:80
+25 silly fetchPackageMetaData     at Object.exports._errnoException (util.js:1020:11)
+25 silly fetchPackageMetaData     at exports._exceptionWithHostPort (util.js:1043:20)
+25 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+25 silly fetchPackageMetaData   code: 'ECONNREFUSED',
+25 silly fetchPackageMetaData   errno: 'ECONNREFUSED',
+25 silly fetchPackageMetaData   syscall: 'connect',
+25 silly fetchPackageMetaData   address: '85.10.209.91',
+25 silly fetchPackageMetaData   port: 80 }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Finishing
+29 silly install printInstalled
+30 verbose stack Error: connect ECONNREFUSED 85.10.209.91:80
+30 verbose stack     at Object.exports._errnoException (util.js:1020:11)
+30 verbose stack     at exports._exceptionWithHostPort (util.js:1043:20)
+30 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+31 verbose cwd /Applications/MAMP/htdocs/tests-php/drupalboot3
+32 error Darwin 16.6.0
+33 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "gulp"
+34 error node v6.11.2
+35 error npm  v3.10.10
+36 error code ECONNREFUSED
+37 error errno ECONNREFUSED
+38 error syscall connect
+39 error Error: connect ECONNREFUSED 85.10.209.91:80
+39 error     at Object.exports._errnoException (util.js:1020:11)
+39 error     at exports._exceptionWithHostPort (util.js:1043:20)
+39 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+39 error  { Error: connect ECONNREFUSED 85.10.209.91:80
+39 error     at Object.exports._errnoException (util.js:1020:11)
+39 error     at exports._exceptionWithHostPort (util.js:1043:20)
+39 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1086:14)
+39 error   code: 'ECONNREFUSED',
+39 error   errno: 'ECONNREFUSED',
+39 error   syscall: 'connect',
+39 error   address: '85.10.209.91',
+39 error   port: 80 }
+40 error If you are behind a proxy, please make sure that the
+40 error 'proxy' config is set properly.  See: 'npm help config'
+41 verbose exit [ 1, true ]
